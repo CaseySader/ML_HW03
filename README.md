@@ -11,7 +11,11 @@ python NeuralNetwork.py -d ionosphere
 ```
 * Run on mnist dataset:
 ```python
-python NeuralNetwork -d mnist_784
+python NeuralNetwork.py -d mnist_784
+```
+* Run and specify hyperparameter values 
+```python
+python NeuralNetwork.py -d <dataset> -n <num_hidden_layer_nodes> -r <learning_rate> -e <epochs> -b <batch_size>
 ```
 
 ## Datasets (python script downloads these for you):
