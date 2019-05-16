@@ -1,10 +1,28 @@
 ## Authors:
 ### Casey Sader & Lei Wang
-  
+
+## Datasets (python script downloads these for you):
+* [ionosphere dataset](https://www.openml.org/d/59): Analyze radar data and predict if the data shows evidence of a structure in the ionosphere (good) or not (bad)
+* [mnist dataset](https://www.openml.org/d/554): Analyze images of handwritten digits to create a model that can predict the digit
+
+## Process:
+1. Read in the command line arguments to determine the dataset and hyperparameters for the model.
+2. Load the dataset and convert all labels to integers.
+3. Create features array and labels array.
+4. (if mnist, divide all values by 255 to normalize between 0 and 1) Then reshape the labels array so that each label is one-hot-encoded for the possible label values.
+5. Create training and testing sets.
+6. Initialize weights and biases using random values.
+7. For each epoch and batch, perform forward propagation and backwards propagation using the sigmoid activation function to get the gradient values used to determine the new weights and biases. Update weights and biases then calculate loss value for both the training and testing sets. Move on to next epoch.
+8. Use forward propagation on the testing features to make predictions and then calculate metrics using the true label values.
+
 ## How to run the program:
 ### Your system needs to support python2.7
-
-### command to generate run
+* You may need to run
+```python
+pip install sklearn
+pip install numpy
+```
+### Command to generate run
 * #### Run on ionosphere datatset:
 ```python
 python NeuralNetwork.py -d ionosphere
@@ -84,20 +102,6 @@ example output:
 ```python
 python NeuralNetwork.py -d <dataset> -n <num_hidden_layer_nodes> -r <learning_rate> -e <epochs> -b <batch_size>
 ```
-
-## Datasets (python script downloads these for you):
-* [ionosphere dataset](https://www.openml.org/d/59): Analyze radar data and predict if the data shows evidence of a structure in the ionosphere (good) or not (bad)
-* [mnist dataset](https://www.openml.org/d/554): Analyze images of handwritten digits to create a model that can predict the digit
-
-## Process:
-1. Read in the command line arguments to determine the dataset and hyperparameters for the model.
-2. Load the dataset and convert all labels to integers.
-3. Create features array and labels array.
-4. (if mnist, divide all values by 255 to normalize between 0 and 1) Then reshape the labels array so that each label is one-hot-encoded for the possible label values.
-5. Create training and testing sets.
-6. Initialize weights and biases using random values.
-7. For each epoch and batch, perform forward propagation and backwards propagation using the sigmoid activation function to get the gradient values used to determine the new weights and biases. Update weights and biases then calculate loss value for both the training and testing sets. Move on to next epoch.
-8. Use forward propagation on the testing features to make predictions and then calculate metrics using the true label values.
 
 ## References:
 * https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research
