@@ -19,8 +19,8 @@
 ### Your system needs to support python2.7
 You may need to run
 ```python
-pip install sklearn
 pip install numpy
+pip install sklearn
 ```
 ### Command to generate run
 * #### Run on ionosphere datatset:
