@@ -80,7 +80,7 @@ example output:
 >weighted avg       0.93      0.93      0.93     21000  
 >  
 
-#### * Run and specify hyperparameter values 
+* #### Run and specify hyperparameter values 
 ```python
 python NeuralNetwork.py -d <dataset> -n <num_hidden_layer_nodes> -r <learning_rate> -e <epochs> -b <batch_size>
 ```
