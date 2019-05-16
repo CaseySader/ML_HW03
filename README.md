@@ -10,7 +10,7 @@
 python NeuralNetwork.py -d ionosphere
 ```
 example output:
-
+'code()
 Loading dataset
 Feature Extraction
 Beginning training
@@ -36,7 +36,7 @@ Test Data Statistics:
    micro avg       0.89      0.89      0.89       106
    macro avg       0.82      0.60      0.64       106
 weighted avg       0.87      0.89      0.86       106
-
+'
 
 * Run on mnist dataset:
 ```python
