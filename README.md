@@ -5,7 +5,7 @@
 ### Your system needs to support python2.7 before compile
 
 ### command to generate run
-#### * Run on ionosphere datatset:
+* #### Run on ionosphere datatset:
 ```python
 python NeuralNetwork.py -d ionosphere
 ```
@@ -39,7 +39,7 @@ example output:
 >  
 
 
-#### * Run on mnist dataset:
+* #### Run on mnist dataset:
 ```python
 python NeuralNetwork.py -d mnist_784
 ```
