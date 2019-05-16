@@ -17,7 +17,7 @@
 
 ## How to run the program:
 ### Your system needs to support python2.7
-* You may need to run
+You may need to run
 ```python
 pip install sklearn
 pip install numpy
