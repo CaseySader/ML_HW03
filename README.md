@@ -5,7 +5,7 @@
 ### Your system needs to support python2.7 before compile
 
 ### command to generate run
-* Run on ionosphere datatset:
+# * Run on ionosphere datatset:
 ```python
 python NeuralNetwork.py -d ionosphere
 ```
@@ -39,11 +39,48 @@ example output:
 >  
 
 
-* Run on mnist dataset:
+# * Run on mnist dataset:
 ```python
 python NeuralNetwork.py -d mnist_784
 ```
-* Run and specify hyperparameter values 
+example output:
+
+>Loading dataset  
+>Feature Extraction  
+>Beginning training  
+>Epoch 1: training loss = 0.695494875969, test loss = 0.669506317081  
+>Epoch 2: training loss = 0.462445647993, test loss = 0.440131286278  
+>Epoch 3: training loss = 0.386904474112, test loss = 0.368653975245  
+>Epoch 4: training loss = 0.349383001737, test loss = 0.334040871395  
+>Epoch 5: training loss = 0.324961520066, test loss = 0.312349764054  
+>Epoch 6: training loss = 0.306472964474, test loss = 0.295567974386  
+>Epoch 7: training loss = 0.292175051203, test loss = 0.283073804934  
+>Epoch 8: training loss = 0.279983777634, test loss = 0.27239595451  
+>Epoch 9: training loss = 0.269675758606, test loss = 0.263298758342  
+>Epoch 10: training loss = 0.261015109066, test loss = 0.25573168386  
+>Training done.  
+>  
+>Test Data Statistics:  
+>  
+>              precision    recall  f1-score   support  
+>  
+>           0       0.97      0.94      0.96      2144  
+>           1       0.98      0.95      0.96      2359  
+>           2       0.91      0.93      0.92      2073  
+>           3       0.91      0.91      0.91      2137  
+>           4       0.95      0.91      0.93      2120  
+>           5       0.89      0.90      0.89      1884  
+>           6       0.96      0.94      0.95      2061  
+>           7       0.93      0.93      0.93      2218  
+>           8       0.89      0.92      0.90      2005  
+>           9       0.89      0.92      0.91      1999  
+>  
+>   micro avg       0.93      0.93      0.93     21000  
+>   macro avg       0.93      0.93      0.93     21000  
+>weighted avg       0.93      0.93      0.93     21000  
+>  
+
+# * Run and specify hyperparameter values 
 ```python
 python NeuralNetwork.py -d <dataset> -n <num_hidden_layer_nodes> -r <learning_rate> -e <epochs> -b <batch_size>
 ```
