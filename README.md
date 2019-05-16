@@ -26,3 +26,6 @@ python NeuralNetwork.py -d <dataset> -n <num_hidden_layer_nodes> -r <learning_ra
 
 
 ## Reference:
+* https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research
+* https://www.openml.org/search?type=data
+* [3Blue1Brown's YouTube series on Neural Networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
