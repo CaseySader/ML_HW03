@@ -10,7 +10,7 @@
 python NeuralNetwork.py -d ionosphere
 ```
 example output:
-'code()
+`code()
 Loading dataset
 Feature Extraction
 Beginning training
@@ -24,19 +24,15 @@ Epoch 7: training loss = 0.652690792309, test loss = 0.728942950953
 Epoch 8: training loss = 0.644293871302, test loss = 0.612275911894
 Epoch 9: training loss = 0.645926947761, test loss = 0.540099088035
 Epoch 10: training loss = 0.643290293484, test loss = 0.520956286026
-Training done.
-
-Test Data Statistics:
-
-              precision    recall  f1-score   support
-
+Training done.\n
+Test Data Statistics:\n
+              precision    recall  f1-score   support\n
            b       0.75      0.21      0.33        14
-           g       0.89      0.99      0.94        92
-
+           g       0.89      0.99      0.94        92\n
    micro avg       0.89      0.89      0.89       106
    macro avg       0.82      0.60      0.64       106
-weighted avg       0.87      0.89      0.86       106
-'
+weighted avg       0.87      0.89      0.86       106\n
+`
 
 * Run on mnist dataset:
 ```python
