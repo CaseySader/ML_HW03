@@ -86,7 +86,7 @@ python NeuralNetwork.py -d <dataset> -n <num_hidden_layer_nodes> -r <learning_ra
 ```
 
 ## Datasets (python script downloads these for you):
-* [ionosphere dataset](https://www.openml.org/d/59): Analyze radar data and predict if the data shows evidence of the ionosphere (good) or not (bad)
+* [ionosphere dataset](https://www.openml.org/d/59): Analyze radar data and predict if the data shows evidence of a structure in the ionosphere (good) or not (bad)
 * [mnist dataset](https://www.openml.org/d/554): Analyze images of handwritten digits to create a model that can predict the digit
 
 ## Process:
